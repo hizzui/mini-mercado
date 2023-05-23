@@ -1,2 +1,2 @@
 # minimercado
- Trabalho de dev web
+Ryan Carlos Mendes de Carvalho - 202108348902
