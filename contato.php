@@ -82,5 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>buyeasyminiplataforma@gmail.com</p>
       </div>
     </div>
-  </body>
+    </body>
+
+<script src="./js/index.js"></script>
+
 </php>

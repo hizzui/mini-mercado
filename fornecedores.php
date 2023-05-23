@@ -118,4 +118,7 @@
 </php>
 
 </body>
+
+<script src="./js/index.js"></script>
+
 </php>
