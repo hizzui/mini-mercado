@@ -4,6 +4,21 @@ body {
     font-size: 16px;
 }
 
+
+.modo-escuro{
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-escuro header{
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-escuro .informacoes{
+    color: #333;
+}
+
 h1{
     text-align: center;
     margin-top: 40px;

@@ -2,6 +2,34 @@ body{
     background-color: #8C6316;
 }
 
+.logo{
+    width: 60px;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+.imagem-botao:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.modo-escuro{
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-escuro header{
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-escuro .product{
+    color: #333;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;

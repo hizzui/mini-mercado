@@ -13,6 +13,7 @@
 
     <link rel="shortcut icon" href="img/logo-sem-funfo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/resets.css">
     <link rel="stylesheet" href="css/components/button.css">
@@ -23,7 +24,7 @@
 <body>
 
 <header class="header">
-     <img class="logo" src="/img/Logotipo Loja Online Básico.png" width="60px" alt="Logo da marca">
+     <img class="logo" src="./img/Logotipo Loja Online Básico.png" width="60px" alt="Logo da marca">
      <nav>
           <a class="action" href = "index.php" >Início</a>
           <a class="action" href = "produtos.php">Produtos</a>
@@ -32,6 +33,9 @@
           <a class="button" href = "cadastro.php" lang="en">Cadastre-se</a>
         <a class="button" href = "login.php" lang="en">Login</a>
     </nav>
+    <button id="botao-alterar-tema">
+        <img width="30px" src="./img/sun.png"  alt="sol imagem" class="imagem-botao">
+    </button>
  </header>
 
     <h1>Lista de Fornecedores</h1>
@@ -119,6 +123,6 @@
 
 </body>
 
-<script src="./js/index.js"></script>
+<script src="js/index.js"></script>
 
 </php>

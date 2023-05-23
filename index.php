@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/action.css">
     <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/scrollbar.css">
 
 
     </head>
     <body>
         <header class="header">
-            <img class="logo" src="/img/Logotipo Loja Online Básico.png" width="60px" alt="Logo da marca">
+            <img class="logo" src="img/Logotipo Loja Online Básico.png" width="60px" alt="Logo da marca">
             <nav>
                 <a class="action" href = "index.php">Início</a>
                 <a class="action" href = "produtos.php">Produtos</a>
@@ -32,6 +33,11 @@
                 <a class="button" href = "cadastro.php" lang="en">Cadastre-se</a>
               <a class="button" href = "login.php" lang="en">Login</a>
             </nav>
+
+            <button id="botao-alterar-tema">
+                <img width="30px" src="./img/sun.png"  alt="sol imagem" class="imagem-botao">
+            </button>
+
         </header>
         
         <main>
@@ -41,13 +47,13 @@
                     <img src="img/produtos/agua-sanitaria-removebg-preview.png" alt="Foto Água Saniária">
                     <h3>Água Sanitária</h3>
                     <p class="preco">De: <s>R$ 5,00</s></p>
-                    <p>Por: R$ 2,56</p>
+                    <p>Por: R$ 2,55</p>
                 </div>
                 <div class="product">
                     <img src="img/produtos/nescau-foto-removebg-preview.png" alt="Foto Nescau">
                     <h3>Nescau</h3>
                     <p class="preco">De: <s>R$ 5,00</s></p>
-                    <p>Por: R$ 4,00</p>
+                    <p>Por: R$ 6,00</p>
                 </div>
             </section>
             <aside>
@@ -64,8 +70,8 @@
             </aside>
         </main>
         
-</body>
+    </body>
 
-<script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
 
-</php>
+    </php>

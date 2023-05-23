@@ -1,5 +1,5 @@
 <!DOCTYPE php>
-<php lang="en">
+<php lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +13,13 @@
 
     <link rel="shortcut icon" href="img/logo-sem-funfo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/resets.css">
     <link rel="stylesheet" href="css/components/button.css">
     <link rel="stylesheet" href="css/components/action.css">
     <link rel="stylesheet" href="css/components/produtos.css">
+    <link rel="stylesheet" href="css/components/scrollbar.css">
 
 </head>
 <body>
@@ -32,6 +34,11 @@
           <a class="button" href = "cadastro.php" lang="en">Cadastre-se</a>
         <a class="button" href = "login.php" lang="en">Login</a>
         </nav>
+
+        <button id="botao-alterar-tema">
+                <img width="30px" src="./img/sun.png"  alt="sol imagem" class="imagem-botao">
+            </button>
+            
     </header>
 
         <h1>Produtos para Supermercado</h1>
@@ -48,7 +55,7 @@
               <div class="fornecedor">Fornecedor: JL Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 4,00</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 7,92</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -64,7 +71,7 @@
               <div class="fornecedor">Fornecedor: DEF Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 1,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 4,99</div>
-              <div class="product-description">Descrição do produto 2.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in.</div>
             </div>
           </div>
 
@@ -80,7 +87,7 @@
               <div class="fornecedor">Fornecedor: Gelado Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 4,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 10,00</div>
-              <div class="product-description">Descrição do produto 3.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in.</div>
             </div>
           </div>
 
@@ -96,7 +103,7 @@
               <div class="fornecedor">Fornecedor: JK Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 2,56</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 5,50</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -112,7 +119,7 @@
               <div class="fornecedor">Fornecedor: DL Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 2,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 4,99</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -128,7 +135,7 @@
               <div class="fornecedor">Fornecedor: Leandro Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 0,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 3,99</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -144,7 +151,7 @@
               <div class="fornecedor">Fornecedor: JKL Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 0,99</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 3,00</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -160,7 +167,7 @@
               <div class="fornecedor">Fornecedor: João frios</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 1,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 4,00</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
           </div>
 
@@ -177,13 +184,13 @@
               <div class="fornecedor">Fornecedor: JKL Distribuidora</div>
               <div class="product-price-compra">Preço de compra do produto: R$ 4,50</div>
               <div class="product-price-venda">Preço de venda do produto: R$ 8,99</div>
-              <div class="product-description">Descrição do produto 1.</div>
+              <div class="product-description">Descrição do produto 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure quod harum veritatis quo, excepturi accusamus nesciunt natus! Quasi exercitationem non consectetur dolores aperiam. Dolor ex minima error repudiandae in</div>
             </div>
 
             
 
-            </body>
+</body>
 
-<script src="./js/index.js"></script>
+<script src="js/index.js"></script>
 
 </php>
