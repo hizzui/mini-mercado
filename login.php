@@ -12,7 +12,7 @@
 
         if (mysqli_num_rows($result) == 1) {
             $_SESSION['usuario'] = $usuario;
-            header("Location: sistema.php");
+            header("Location: index.php");
             exit();
         } else {
             
