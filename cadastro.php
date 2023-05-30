@@ -75,7 +75,7 @@
 
                 <p>
                     Já tem uma conta?
-                    <a href="login.html">Ir para o Login</a>
+                    <a href="login.php">Ir para o Login</a>
                 </p>
 
                 <p>
