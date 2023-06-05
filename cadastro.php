@@ -11,13 +11,19 @@
         $sql = "INSERT INTO cadastro (nome, sobrenome, usuario, email, senha)
                 VALUES ('$nome', '$sobrenome', '$usuario', '$email', '$senha')";
     
-        if (mysqli_query($conexao, $sql)) {
+        $conexao = new mysqli("localhost", "root", "", "registrar");
+        if ($conexao->connect_error) {
+            die("Falha na conexão: " . $conexao->connect_error);
+        }
+        
+        $result = $conexao->query($sql);
+        if ($result) {
             echo "Usuário cadastrado com sucesso";
         } else {
-            echo "Erro: " . mysqli_error($conexao);
+            echo "Erro: " . $conexao->error;
         }
     
-        mysqli_close($conexao);
+        $conexao->close();
     }
 ?>
 <!DOCTYPE html>
@@ -56,9 +62,10 @@
                     <div class="textfield">
                         <label for="sobrenome">Sobrenome</label>
                         <input type="text" name="sobrenome" placeholder="Sobrenome">
+                    </div>
                     <div class="textfield">
-                            <label for="usuario">Usuário</label>
-                            <input type="text" name="usuario" placeholder="Usuário">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário">
                     </div>
                     <div class="textfield">
                         <label for="email">E-mail</label>
@@ -77,11 +84,10 @@
                     Já tem uma conta?
                     <a href="login.php">Ir para o Login</a>
                 </p>
+            </div>
+        </div>
+    </div>
 
-                <p>
+    <script src="./js/index.js"></script>
 </body>
-
-<script src="./js/index.js"></script>
-
-</php>
-                   
+</html>

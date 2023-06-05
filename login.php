@@ -7,17 +7,25 @@
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];
 
+        $conexao = new mysqli("localhost", "root", "", "registrar");
+
+
+        if ($conexao->connect_error) {
+            die("Falha na conexão: " . $conexao->connect_error);
+        }
+
         $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
         $result = mysqli_query($conexao, $sql);
 
-        if (mysqli_num_rows($result) == 1) {
+        if ($result && mysqli_num_rows($result) == 1) {
             $_SESSION['usuario'] = $usuario;
             header("Location: index.php");
             exit();
         } else {
-            
             $erro = "Usuário ou senha incorretos.";
         }
+
+        mysqli_close($conexao);
     }
 ?>
 
@@ -73,8 +81,6 @@
             </div>
         </div>
     </div>
-    </body>
-
+</body>
 <script src="./js/index.js"></script>
-
-</php>
+</html>

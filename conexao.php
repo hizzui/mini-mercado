@@ -1,12 +1,29 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "registrar";
+// Conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "registrar";
 
-    $conexao = mysqli_connect($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
 
-    if (!$conexao) {
-        die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
-    }
+// Inserção de dados na tabela 'cadastro'
+$nome = "João";
+$sobrenome = "Silva";
+$usuario = "joaosilva";
+$email = "joao@example.com";
+$senha = "123456";
+
+$sql_insert = "INSERT INTO cadastro (nome, sobrenome, usuario, email, senha) VALUES ('$nome', '$sobrenome', '$usuario', '$email', '$senha')";
+if ($conn->query($sql_insert) === TRUE) {
+    echo "Dados inseridos na tabela 'cadastro' com sucesso!";
+} else {
+    echo "Erro ao inserir dados: " . $conn->error;
+}
+
+// Fechamento da conexão com o banco de dados
+$conn->close();
 ?>
